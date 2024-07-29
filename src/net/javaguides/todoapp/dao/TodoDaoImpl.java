@@ -11,19 +11,9 @@ import java.util.List;
 import net.javaguides.todoapp.model.Todo;
 import net.javaguides.todoapp.utils.JDBCUtils;
 
-/**
- * This DAO class provides CRUD database operations for the table todos in the
- * database.
- * 
- * @author Ramesh Fadatare
- *
- */
-
 public class TodoDaoImpl implements TodoDao {
 
-	private static final String INSERT_TODOS_SQL = "INSERT INTO todos"
-			+ "  (title, username, description, target_date,  is_done) VALUES " + " (?, ?, ?, ?, ?);";
-
+	private static final String INSERT_TODOS_SQL = "INSERT INTO todos" + "  (title, username, description, target_date,  is_done) VALUES " + " (?, ?, ?, ?, ?);";
 	private static final String SELECT_TODO_BY_ID = "select id,title,username,description,target_date,is_done from todos where id =?";
 	private static final String SELECT_ALL_TODOS = "select * from todos";
 	private static final String DELETE_TODO_BY_ID = "delete from todos where id = ?;";

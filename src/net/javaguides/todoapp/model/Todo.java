@@ -3,12 +3,7 @@ package net.javaguides.todoapp.model;
 import java.time.LocalDate;
 
 
-/**
- * Todo.java
- * This is a model class represents a Todo entity
- * @author Ramesh Fadatare
- *
- */
+
 public class Todo {
 
 	private Long id;
@@ -109,5 +104,6 @@ public class Todo {
 		if (id != other.id)
 			return false;
 		return true;
+		
 	}
 }

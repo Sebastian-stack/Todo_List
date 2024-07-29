@@ -13,9 +13,7 @@ import javax.servlet.http.HttpSession;
 import net.javaguides.todoapp.dao.LoginDao;
 import net.javaguides.todoapp.model.LoginBean;
 
-/**
- * @email Ramesh Fadatare
- */
+
 
 @WebServlet("/login")
 public class LoginController extends HttpServlet {

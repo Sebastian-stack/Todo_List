@@ -12,10 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import net.javaguides.todoapp.dao.UserDao;
 import net.javaguides.todoapp.model.User;
 
-/**
- * @email Ramesh Fadatare
- */
-
 @WebServlet("/register")
 public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
